@@ -53,9 +53,25 @@ umaru-bongo-cat/
 │   ├── both_tap.svg    # Both hands tapping
 │   ├── left_hand.svg   # Left paw overlay
 │   ├── right_hand.svg  # Right paw overlay
-│   └── mouse_hand.svg  # Mouse hand sprite
+│   ├── mouse_hand.svg  # Mouse hand sprite
+│   └── umaru_reference_*.png  # Reference images
 └── README.md
 ```
+
+## Included Assets
+
+### SVG Sprites (Ready to Use)
+The project includes detailed SVG sprites featuring Umaru's iconic design:
+- Orange hamster hoodie with gradient shading
+- Blonde hair with bangs
+- Big anime-style amber eyes with sparkle highlights
+- Cute pink blush and cat whiskers
+- Expressive states: neutral, focused, excited
+
+### Reference Images
+Two reference images from GitHub are included:
+- `umaru_reference_gaming.png` - Chibi Umaru gaming (500x500)
+- `umaru_reference_casual.png` - Umaru in casual pose (1920x1080)
 
 ## Customization
 
@@ -77,9 +93,21 @@ The included SVG sprites are placeholders. To use custom Umaru artwork:
 ### Finding Umaru Skins
 
 You can find community-made Umaru skins at:
+
+**PNG Image Sites** (manual download required):
+- [PNGWing - Himouto Umaru Chan](https://www.pngwing.com/en/search?q=himouto+Umaru+Chan) - Transparent PNGs
+- [HiClipart - Umaru Doma](https://www.hiclipart.com/search?clipart=umaru+Doma) - Various poses
+- [PNGkey - Umaru](https://www.pngkey.com/pngs/umaru/) - Free transparent images
+
+**Telegram Sticker Packs**:
+- Search "Umaru" or "Himouto" in Telegram stickers
+- Use [moe-sticker-bot](https://github.com/star-39/moe-sticker-bot) to download LINE/Telegram stickers
+
+**Desktop Apps with Skins**:
+- [BongoCat Mver](https://github.com/MMmmmoko/Bongo-Cat-Mver) - Windows app with skin support
+- [SourceForge BongoCat-Skins](https://sourceforge.net/projects/bongocat-skins/) - Community skin downloads
 - DeviantArt (search "Bongo Cat Umaru")
 - YouTube video descriptions (search "Umaru Bongo Cat Overlay")
-- BongoCat Mver Discord community
 
 ### Changing Key Mappings
 
