@@ -1,66 +1,107 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
-  <!-- Umaru Bongo Cat - Both Hands Tap State -->
-  <!-- Orange Hoodie/Hamster Cape -->
-  <ellipse cx="200" cy="200" rx="150" ry="120" fill="#FF6B35"/>
-  <ellipse cx="200" cy="200" rx="140" ry="110" fill="#FF8C5A"/>
+  <defs>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7043"/>
+      <stop offset="100%" style="stop-color:#E64A19"/>
+    </linearGradient>
+    <linearGradient id="hoodieInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFAB91"/>
+      <stop offset="100%" style="stop-color:#FF8A65"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#FFC107"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFECB3"/>
+      <stop offset="100%" style="stop-color:#FFE0B2"/>
+    </linearGradient>
+    <radialGradient id="blushGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF5252;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF59D"/>
+      <stop offset="100%" style="stop-color:#FFEE58"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Hoodie ears - slightly bouncing -->
-  <ellipse cx="120" cy="95" rx="35" ry="45" fill="#FF6B35"/>
-  <ellipse cx="280" cy="95" rx="35" ry="45" fill="#FF6B35"/>
-  <ellipse cx="120" cy="95" rx="25" ry="35" fill="#FFB088"/>
-  <ellipse cx="280" cy="95" rx="25" ry="35" fill="#FFB088"/>
+  <!-- Excitement sparkles -->
+  <polygon points="50,60 55,75 70,75 58,85 63,100 50,90 37,100 42,85 30,75 45,75" fill="url(#sparkleGrad)"/>
+  <polygon points="350,60 355,75 370,75 358,85 363,100 350,90 337,100 342,85 330,75 345,75" fill="url(#sparkleGrad)"/>
+  <polygon points="60,30 63,40 73,40 65,47 68,57 60,50 52,57 55,47 47,40 57,40" fill="#FFF59D" opacity="0.8"/>
+  <polygon points="340,30 343,40 353,40 345,47 348,57 340,50 332,57 335,47 327,40 337,40" fill="#FFF59D" opacity="0.8"/>
 
-  <!-- Face - excited! -->
-  <ellipse cx="200" cy="148" rx="80" ry="70" fill="#FFE4C4"/>
+  <!-- Hamster Hoodie Body - bouncing -->
+  <ellipse cx="200" cy="218" rx="160" ry="130" fill="url(#hoodieGrad)"/>
+  <ellipse cx="200" cy="213" rx="145" ry="115" fill="url(#hoodieInner)"/>
 
-  <!-- Hair (blonde) - bouncy -->
-  <ellipse cx="200" cy="105" rx="75" ry="42" fill="#FFD700"/>
-  <ellipse cx="150" cy="125" rx="22" ry="32" fill="#FFD700"/>
-  <ellipse cx="250" cy="125" rx="22" ry="32" fill="#FFD700"/>
+  <!-- Hoodie Hamster Ears - perked up -->
+  <ellipse cx="100" cy="88" rx="42" ry="58" fill="url(#hoodieGrad)"/>
+  <ellipse cx="300" cy="88" rx="42" ry="58" fill="url(#hoodieGrad)"/>
+  <ellipse cx="100" cy="88" rx="30" ry="42" fill="#FFCCBC"/>
+  <ellipse cx="300" cy="88" rx="30" ry="42" fill="#FFCCBC"/>
 
-  <!-- Eyes (excited/sparkly) -->
-  <ellipse cx="170" cy="152" rx="20" ry="24" fill="#8B4513"/>
-  <ellipse cx="230" cy="152" rx="20" ry="24" fill="#8B4513"/>
-  <!-- Eye shine - bigger for excitement -->
-  <ellipse cx="176" cy="146" rx="8" ry="10" fill="#FFF"/>
-  <ellipse cx="236" cy="146" rx="8" ry="10" fill="#FFF"/>
-  <!-- Extra sparkle -->
-  <circle cx="164" cy="158" r="3" fill="#FFF"/>
-  <circle cx="224" cy="158" r="3" fill="#FFF"/>
+  <!-- Face - excited -->
+  <ellipse cx="200" cy="152" rx="88" ry="80" fill="url(#skinGrad)"/>
 
-  <!-- Blush (very intense) -->
-  <ellipse cx="140" cy="172" rx="20" ry="12" fill="#FFB6C1" opacity="0.9"/>
-  <ellipse cx="260" cy="172" rx="20" ry="12" fill="#FFB6C1" opacity="0.9"/>
+  <!-- Hair - bouncy -->
+  <path d="M 112 155 Q 112 85 200 80 Q 288 85 288 155 Q 283 115 253 110 Q 223 95 200 100 Q 177 95 147 110 Q 117 115 112 155" fill="url(#hairGrad)"/>
+  <path d="M 145 125 Q 155 108 170 120" fill="none" stroke="#F9A825" stroke-width="3"/>
+  <path d="M 230 120 Q 245 108 255 125" fill="none" stroke="#F9A825" stroke-width="3"/>
+  <ellipse cx="122" cy="158" rx="16" ry="38" fill="url(#hairGrad)"/>
+  <ellipse cx="278" cy="158" rx="16" ry="38" fill="url(#hairGrad)"/>
 
-  <!-- Mouth (big happy smile) -->
-  <path d="M 175 182 Q 200 205 225 182" stroke="#8B4513" stroke-width="3" fill="none"/>
-  <path d="M 185 190 Q 200 198 215 190" fill="#FF6B6B"/>
+  <!-- Eyes - SUPER EXCITED sparkly eyes -->
+  <ellipse cx="165" cy="155" rx="25" ry="32" fill="#5D4037"/>
+  <ellipse cx="235" cy="155" rx="25" ry="32" fill="#5D4037"/>
+  <!-- Eye color - bigger and shinier -->
+  <ellipse cx="165" cy="160" rx="15" ry="20" fill="#8D6E63"/>
+  <ellipse cx="235" cy="160" rx="15" ry="20" fill="#8D6E63"/>
+  <ellipse cx="165" cy="163" rx="10" ry="13" fill="#5D4037"/>
+  <ellipse cx="235" cy="163" rx="10" ry="13" fill="#5D4037"/>
+  <!-- BIG sparkle highlights -->
+  <ellipse cx="172" cy="148" rx="9" ry="12" fill="#FFF"/>
+  <ellipse cx="242" cy="148" rx="9" ry="12" fill="#FFF"/>
+  <circle cx="158" cy="165" r="5" fill="#FFF" opacity="0.8"/>
+  <circle cx="228" cy="165" r="5" fill="#FFF" opacity="0.8"/>
+  <!-- Extra sparkle dots -->
+  <circle cx="175" cy="162" r="3" fill="#FFF"/>
+  <circle cx="245" cy="162" r="3" fill="#FFF"/>
 
-  <!-- Cat whiskers - vibrating -->
-  <line x1="115" y1="165" x2="145" y2="172" stroke="#8B4513" stroke-width="2"/>
-  <line x1="115" y1="178" x2="145" y2="178" stroke="#8B4513" stroke-width="2"/>
-  <line x1="285" y1="165" x2="255" y2="172" stroke="#8B4513" stroke-width="2"/>
-  <line x1="285" y1="178" x2="255" y2="178" stroke="#8B4513" stroke-width="2"/>
+  <!-- Blush - MAXIMUM EXCITEMENT -->
+  <ellipse cx="125" cy="185" rx="25" ry="16" fill="url(#blushGrad)"/>
+  <ellipse cx="275" cy="185" rx="25" ry="16" fill="url(#blushGrad)"/>
 
-  <!-- Left Arm/Paw - PRESSING DOWN -->
-  <ellipse cx="100" cy="300" rx="45" ry="30" fill="#FFE4C4"/>
-  <!-- Impact lines left -->
-  <line x1="70" y1="320" x2="55" y2="335" stroke="#FF6B35" stroke-width="4"/>
-  <line x1="100" y1="325" x2="100" y2="345" stroke="#FF6B35" stroke-width="4"/>
-  <line x1="130" y1="320" x2="145" y2="335" stroke="#FF6B35" stroke-width="4"/>
+  <!-- Mouth - BIG happy open smile -->
+  <path d="M 175 195 Q 200 225 225 195" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="205" rx="18" ry="12" fill="#FF8A80"/>
 
-  <!-- Right Arm/Paw - PRESSING DOWN -->
-  <ellipse cx="300" cy="300" rx="45" ry="30" fill="#FFE4C4"/>
-  <!-- Impact lines right -->
-  <line x1="270" y1="320" x2="255" y2="335" stroke="#FF6B35" stroke-width="4"/>
-  <line x1="300" y1="325" x2="300" y2="345" stroke="#FF6B35" stroke-width="4"/>
-  <line x1="330" y1="320" x2="345" y2="335" stroke="#FF6B35" stroke-width="4"/>
+  <!-- Whiskers - vibrating with excitement -->
+  <line x1="105" y1="172" x2="135" y2="178" stroke="#BCAAA4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="103" y1="188" x2="135" y2="188" stroke="#BCAAA4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="295" y1="172" x2="265" y2="178" stroke="#BCAAA4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="297" y1="188" x2="265" y2="188" stroke="#BCAAA4" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Paw pads -->
-  <ellipse cx="100" cy="305" rx="12" ry="8" fill="#FFB6C1"/>
-  <ellipse cx="300" cy="305" rx="12" ry="8" fill="#FFB6C1"/>
+  <!-- LEFT Paw - PRESSING DOWN -->
+  <ellipse cx="90" cy="315" rx="50" ry="30" fill="url(#skinGrad)"/>
+  <ellipse cx="90" cy="320" rx="15" ry="10" fill="#FFAB91"/>
+  <circle cx="75" cy="308" r="5" fill="#FFAB91"/>
+  <circle cx="90" cy="305" r="5" fill="#FFAB91"/>
+  <circle cx="105" cy="308" r="5" fill="#FFAB91"/>
 
-  <!-- Excitement effects -->
-  <text x="50" y="80" font-size="24" fill="#FFD700">*</text>
-  <text x="340" y="80" font-size="24" fill="#FFD700">*</text>
+  <!-- RIGHT Paw - PRESSING DOWN -->
+  <ellipse cx="310" cy="315" rx="50" ry="30" fill="url(#skinGrad)"/>
+  <ellipse cx="310" cy="320" rx="15" ry="10" fill="#FFAB91"/>
+  <circle cx="295" cy="308" r="5" fill="#FFAB91"/>
+  <circle cx="310" cy="305" r="5" fill="#FFAB91"/>
+  <circle cx="325" cy="308" r="5" fill="#FFAB91"/>
+
+  <!-- Impact lines - BOTH SIDES -->
+  <line x1="55" y1="330" x2="35" y2="350" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
+  <line x1="90" y1="338" x2="90" y2="360" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
+  <line x1="125" y1="330" x2="145" y2="350" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
+  <line x1="275" y1="330" x2="255" y2="350" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
+  <line x1="310" y1="338" x2="310" y2="360" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
+  <line x1="345" y1="330" x2="365" y2="350" stroke="#FF7043" stroke-width="5" stroke-linecap="round"/>
 </svg>

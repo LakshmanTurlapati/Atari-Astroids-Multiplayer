@@ -1,14 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
-  <!-- Umaru Left Hand/Paw Overlay -->
-  <!-- Paw -->
-  <ellipse cx="60" cy="50" rx="50" ry="40" fill="#FFE4C4"/>
-
-  <!-- Paw pad -->
-  <ellipse cx="60" cy="60" rx="15" ry="12" fill="#FFB6C1"/>
-
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFECB3"/>
+      <stop offset="100%" style="stop-color:#FFE0B2"/>
+    </linearGradient>
+  </defs>
+  <!-- Umaru Left Hand/Paw -->
+  <ellipse cx="60" cy="50" rx="52" ry="42" fill="url(#skinGrad)"/>
+  <!-- Main paw pad -->
+  <ellipse cx="60" cy="62" rx="18" ry="14" fill="#FFAB91"/>
   <!-- Toe beans -->
-  <ellipse cx="35" cy="45" rx="8" ry="6" fill="#FFB6C1"/>
-  <ellipse cx="50" cy="35" rx="8" ry="6" fill="#FFB6C1"/>
-  <ellipse cx="70" cy="35" rx="8" ry="6" fill="#FFB6C1"/>
-  <ellipse cx="85" cy="45" rx="8" ry="6" fill="#FFB6C1"/>
+  <ellipse cx="32" cy="42" rx="10" ry="8" fill="#FFAB91"/>
+  <ellipse cx="50" cy="32" rx="10" ry="8" fill="#FFAB91"/>
+  <ellipse cx="70" cy="32" rx="10" ry="8" fill="#FFAB91"/>
+  <ellipse cx="88" cy="42" rx="10" ry="8" fill="#FFAB91"/>
 </svg>
