@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umaru Bongo Cat - Input Overlay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="overlay-container">
+        <!-- Background/Desk -->
+        <div id="background"></div>
+
+        <!-- Main Umaru Body - switches between neutral, left_tap, right_tap, both_tap -->
+        <img id="umaru-body" src="assets/neutral.svg" alt="Umaru">
+
+        <!-- Left Hand Overlay (for keyboard) -->
+        <div id="left-hand-container">
+            <img id="left-hand" src="assets/left_hand.svg" alt="Left Hand">
+        </div>
+
+        <!-- Right Hand Overlay (for keyboard) -->
+        <div id="right-hand-container">
+            <img id="right-hand" src="assets/right_hand.svg" alt="Right Hand">
+        </div>
+
+        <!-- Mouse Hand - moves with mouse -->
+        <div id="mouse-hand-container">
+            <img id="mouse-hand" src="assets/mouse_hand.svg" alt="Mouse Hand">
+        </div>
+
+        <!-- Keyboard visual -->
+        <div id="keyboard">
+            <div class="key-row">
+                <div class="key" data-key="KeyQ">Q</div>
+                <div class="key" data-key="KeyW">W</div>
+                <div class="key" data-key="KeyE">E</div>
+                <div class="key" data-key="KeyR">R</div>
+                <div class="key" data-key="KeyT">T</div>
+                <div class="key" data-key="KeyY">Y</div>
+                <div class="key" data-key="KeyU">U</div>
+                <div class="key" data-key="KeyI">I</div>
+                <div class="key" data-key="KeyO">O</div>
+                <div class="key" data-key="KeyP">P</div>
+            </div>
+            <div class="key-row">
+                <div class="key" data-key="KeyA">A</div>
+                <div class="key" data-key="KeyS">S</div>
+                <div class="key" data-key="KeyD">D</div>
+                <div class="key" data-key="KeyF">F</div>
+                <div class="key" data-key="KeyG">G</div>
+                <div class="key" data-key="KeyH">H</div>
+                <div class="key" data-key="KeyJ">J</div>
+                <div class="key" data-key="KeyK">K</div>
+                <div class="key" data-key="KeyL">L</div>
+            </div>
+            <div class="key-row">
+                <div class="key" data-key="KeyZ">Z</div>
+                <div class="key" data-key="KeyX">X</div>
+                <div class="key" data-key="KeyC">C</div>
+                <div class="key" data-key="KeyV">V</div>
+                <div class="key" data-key="KeyB">B</div>
+                <div class="key" data-key="KeyN">N</div>
+                <div class="key" data-key="KeyM">M</div>
+            </div>
+            <div class="key-row">
+                <div class="key space-key" data-key="Space">SPACE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key indicator -->
+    <div id="key-display">
+        <span id="current-keys">Press any key...</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

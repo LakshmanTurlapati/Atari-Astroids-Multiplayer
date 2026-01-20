@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80">
+  <!-- Umaru Mouse Hand -->
+  <!-- Paw on mouse -->
+  <ellipse cx="50" cy="40" rx="40" ry="30" fill="#FFE4C4"/>
+
+  <!-- Mouse body underneath -->
+  <ellipse cx="50" cy="55" rx="25" ry="18" fill="#4a4a6a"/>
+  <ellipse cx="50" cy="50" rx="22" ry="15" fill="#5a5a7a"/>
+
+  <!-- Mouse buttons -->
+  <rect x="30" y="40" width="15" height="12" rx="3" fill="#6a6a8a"/>
+  <rect x="55" y="40" width="15" height="12" rx="3" fill="#6a6a8a"/>
+
+  <!-- Mouse scroll wheel -->
+  <rect x="47" y="42" width="6" height="8" rx="2" fill="#3a3a5a"/>
+
+  <!-- Paw pad on top -->
+  <ellipse cx="50" cy="35" rx="12" ry="10" fill="#FFB6C1"/>
+
+  <!-- Small toe beans -->
+  <ellipse cx="30" cy="32" rx="6" ry="5" fill="#FFB6C1"/>
+  <ellipse cx="70" cy="32" rx="6" ry="5" fill="#FFB6C1"/>
+</svg>

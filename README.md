@@ -1,191 +1,113 @@
-# Asteroids Game
+# Umaru Bongo Cat - Input Overlay
 
-A faithful recreation of the classic 1979 Atari Asteroids arcade game built with HTML5 Canvas and vanilla JavaScript. Features authentic vector-style graphics, realistic physics, and retro sound effects.
-
-## [Live Demo - Play Here!](https://harmonious-caramel-3c3627.netlify.app)
-
-## Screenshot
-
-![Asteroids Game Screenshot](snip.png)
-
+A web-based input overlay featuring Umaru Doma from **Himouto! Umaru-chan** in the style of the popular "Bongo Cat" meme. Watch Umaru react to your keyboard and mouse inputs in real-time!
 
 ## Features
 
-### Core Gameplay
-- **Vector Graphics**: Authentic vector-style rendering with glow effects
-- **Realistic Physics**: Inertia-based movement system requiring strategic planning
-- **Asteroid Fragmentation**: Large asteroids split into medium, then small pieces
-- **Screen Wrapping**: Seamless movement across screen boundaries
-- **Multiple Waves**: Increasing difficulty with each completed wave
+- **Keyboard Tracking**: Left-hand keys trigger Umaru's left paw, right-hand keys trigger the right paw
+- **Mouse Tracking**: The mouse hand follows your cursor movement
+- **Click Detection**: Mouse clicks are visually indicated
+- **Visual Keyboard**: On-screen keyboard shows which keys are being pressed
+- **Responsive Design**: Works on various screen sizes
+- **Smooth Animations**: Fluid transitions between states
 
-### Enemies and Combat
-- **UFO Enemies**: Two types with different behaviors and point values
-  - Large UFO: 200 points, less accurate shooting
-  - Small UFO: 1000 points, highly accurate targeting
-- **Smart AI**: UFOs predict player movement for challenging gameplay
-- **Collision Detection**: Precise circle-based collision system
+## How It Works
 
-### Visual and Audio Effects
-- **Particle Systems**: Explosion effects and engine thrust particles
-- **Procedural Audio**: Web Audio API generated retro sound effects
-- **Screen Effects**: Glowing vector graphics with authentic CRT-style appearance
-- **Smooth Animation**: 60 FPS gameplay with deltaTime-based updates
+| Input | Umaru's Reaction |
+|-------|------------------|
+| Left keys (Q, W, E, A, S, D, etc.) | Left paw taps |
+| Right keys (Y, U, I, J, K, L, etc.) | Right paw taps |
+| Space bar | Both paws tap |
+| Mouse movement | Mouse hand follows cursor |
+| Mouse click | Click animation |
 
-### Game Systems
-- **Scoring System**: Traditional point values (Large: 20, Medium: 50, Small: 100)
-- **Extra Lives**: Bonus life awarded every 10,000 points
-- **Hyperspace**: Emergency teleportation with risk of destruction
-- **Invulnerability**: Brief protection period after respawn
+## Quick Start
 
-## Controls
+1. Clone or download this repository
+2. Open `index.html` in your web browser
+3. Start typing and moving your mouse to see Umaru react!
 
-| Input | Action |
-|-------|--------|
-| Left Arrow / A | Rotate ship left |
-| Right Arrow / D | Rotate ship right |
-| Up Arrow / W | Thrust forward |
-| Space | Fire bullets |
-| Shift | Hyperspace teleport |
-| Enter | Start game / Restart |
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/umaru-bongo-cat.git
 
-## Installation and Setup
-
-### Prerequisites
-- Modern web browser with HTML5 Canvas support
-- No additional dependencies required
-
-### Running the Game
-1. Clone or download the repository
-2. Open `asteroids-game/index.html` in your web browser
-3. Click anywhere on the page to initialize audio
-4. Press Enter to start playing
-
-### File Structure
+# Open in browser
+open index.html
+# or
+python -m http.server 8000  # Then visit localhost:8000
 ```
-asteroids-game/
-├── index.html              # Main HTML file
+
+## Project Structure
+
+```
+umaru-bongo-cat/
+├── index.html          # Main HTML file
 ├── css/
-│   └── style.css           # Game styling and UI
+│   └── style.css       # Styling and animations
 ├── js/
-│   ├── game.js             # Main game loop and logic
-│   ├── physics.js          # Physics and math utilities
-│   ├── audio.js            # Web Audio API sound system
-│   └── entities/
-│       ├── entity.js       # Base entity class
-│       ├── ship.js         # Player ship implementation
-│       ├── asteroid.js     # Asteroid entities and fragmentation
-│       ├── bullet.js       # Projectile system
-│       ├── ufo.js          # Enemy UFO implementation
-│       └── particle.js     # Particle effects system
-└── assets/
-    ├── sprites/            # Game sprites (to be added)
-    └── sounds/             # Audio files (to be added)
+│   └── script.js       # Keyboard/mouse event handling
+├── assets/
+│   ├── neutral.svg     # Umaru resting
+│   ├── left_tap.svg    # Left hand tapping
+│   ├── right_tap.svg   # Right hand tapping
+│   ├── both_tap.svg    # Both hands tapping
+│   ├── left_hand.svg   # Left paw overlay
+│   ├── right_hand.svg  # Right paw overlay
+│   └── mouse_hand.svg  # Mouse hand sprite
+└── README.md
 ```
 
-## Technical Implementation
+## Customization
 
-### Architecture
-- **Entity-Component System**: Modular design with base Entity class
-- **Vector Mathematics**: Custom Vector2 class for 2D calculations
-- **Game Loop**: RequestAnimationFrame with delta time interpolation
-- **Input System**: Event-driven keyboard handling with cooldowns
+### Replacing Sprites
 
-### Physics System
-- **Collision Detection**: Circle-based collision using distance calculations
-- **Movement**: Velocity-based positioning with friction and speed limits
-- **Screen Wrapping**: Seamless boundary transitions
-- **Realistic Inertia**: Objects maintain momentum requiring strategic control
+The included SVG sprites are placeholders. To use custom Umaru artwork:
 
-### Audio System
-- **Web Audio API**: Procedurally generated retro sound effects
-- **Dynamic Mixing**: Real-time audio synthesis for authentic 8-bit sounds
-- **Browser Compatibility**: Graceful fallback for unsupported browsers
+1. Prepare your PNG/SVG files:
+   - `neutral.svg` - Both hands resting
+   - `left_tap.svg` - Left hand pressing down
+   - `right_tap.svg` - Right hand pressing down
+   - `both_tap.svg` - Both hands pressing
+   - `mouse_hand.svg` - Hand on mouse
 
-### Performance Optimizations
-- **Efficient Rendering**: Minimal draw calls with canvas state management
-- **Object Pooling**: Reusable particle systems
-- **Delta Time**: Frame-rate independent updates
-- **Collision Optimization**: Spatial partitioning for large object counts
+2. Replace the files in the `assets/` folder
 
-## Game Rules
+3. Adjust sizes in `css/style.css` if needed
 
-### Scoring
-- Large Asteroid: 20 points
-- Medium Asteroid: 50 points
-- Small Asteroid: 100 points
-- Large UFO: 200 points
-- Small UFO: 1000 points
+### Finding Umaru Skins
 
-### Lives and Progression
-- Start with 3 lives
-- Extra life awarded at 10,000 points and every 10,000 thereafter
-- Game over when all lives are lost
-- Waves increase in difficulty with more asteroids
+You can find community-made Umaru skins at:
+- DeviantArt (search "Bongo Cat Umaru")
+- YouTube video descriptions (search "Umaru Bongo Cat Overlay")
+- BongoCat Mver Discord community
 
-### Special Mechanics
-- **Hyperspace**: 10% chance of self-destruction
-- **UFO Spawning**: Appears every 30 seconds when no UFOs present
-- **Invulnerability**: 3-second protection after respawn or hyperspace
-- **Wave Completion**: New wave starts 2 seconds after clearing all asteroids
+### Changing Key Mappings
 
-## Browser Compatibility
+Edit the `leftKeys` and `rightKeys` arrays in `js/script.js` to customize which keys trigger which hand.
 
-### Supported Browsers
-- Chrome 50+ (recommended)
-- Firefox 45+
-- Safari 10+
-- Edge 79+
+## Use Cases
 
-### Required Features
-- HTML5 Canvas 2D Context
-- Web Audio API (for sound)
-- ES6 Classes and Arrow Functions
-- RequestAnimationFrame
+- **Streaming Overlay**: Use OBS Browser Source to add this to your stream
+- **Typing Visualizer**: Show your typing activity in videos
+- **Just for Fun**: Enjoy watching Umaru bongo!
 
-## Development
+### OBS Setup
 
-### Code Style
-- ES6+ JavaScript with classes
-- Modular architecture with separate entity files
-- Consistent naming conventions
-- No external dependencies
+1. Add a Browser Source in OBS
+2. Set the URL to your local file or hosted version
+3. Set dimensions to 800x600 (or adjust as needed)
+4. Enable "Shutdown source when not visible" for performance
 
-### Adding Features
-1. Extend the Entity base class for new game objects
-2. Add update and draw methods for custom behavior
-3. Register entities in the main game loop
-4. Implement collision detection as needed
+## Credits
 
-### Performance Monitoring
-- Use browser dev tools for frame rate analysis
-- Monitor memory usage for particle systems
-- Check audio context performance on mobile devices
-
-## Known Issues
-
-### Audio
-- Some browsers require user interaction before audio can play
-- Safari may have reduced audio quality on older versions
-
-### Mobile
-- Touch controls not implemented (keyboard only)
-- Performance may vary on lower-end mobile devices
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Implement your changes
-4. Test across different browsers
-5. Submit a pull request
+- Character: Umaru Doma from Himouto! Umaru-chan
+- Concept: Based on the Bongo Cat meme
+- Inspiration: [externalizable/bongo.cat](https://github.com/externalizable/bongo.cat)
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is for personal and educational use. Umaru Doma is a character from Himouto! Umaru-chan by Sankaku Head.
 
-## Acknowledgments
+---
 
-- Original Asteroids game by Atari (1979)
-- Lyle Rains and Ed Logg for the original game design
-- Vector graphics inspiration from classic arcade machines
-- Web Audio API examples and documentation
+**Enjoy watching Umaru bongo!** 🐹
